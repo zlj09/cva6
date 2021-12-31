@@ -10,7 +10,7 @@ jobs:
       id-token: write
       contents: read
     steps:
-    - name: Configure AWS credentials
+    - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
@@ -20,3 +20,4 @@ jobs:
       with:
         project-name: CVA6
         hide-log: true
+
